@@ -121,10 +121,10 @@ public class cargarArchivo {
      * @return Una lista de objetos Factura leídos desde el archivo JSON.
      */
     public static List<Factura> leerFactura() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
-
         try {
+            
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.registerModule(new JavaTimeModule());
             File file = new File("src/main/java/archivos/archivosfacturas.json");
 
             if (!file.exists()) {
@@ -150,6 +150,7 @@ public class cargarArchivo {
         objectMapper.registerModule(new JavaTimeModule());
 
         try {
+            
             File file = new File("src/main/java/archivos/archivosArticulo.json");
 
             if (!file.exists()) {

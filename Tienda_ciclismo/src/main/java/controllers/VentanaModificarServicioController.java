@@ -78,8 +78,8 @@ public class VentanaModificarServicioController implements Initializable {
 
     private servicio objetoModificar;
 
-    private ArrayList<String> serviciosString;
-    private ArrayList<servicio> servicios;
+    private ArrayList<String> serviciosString = formatoClientes(App.devolverClientes());
+    private ArrayList<servicio> servicios = App.getServicios();
     @FXML
     private MenuBar menuOpciones;
 
@@ -88,8 +88,6 @@ public class VentanaModificarServicioController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        serviciosString = formatoClientes(App.devolverClientes());
-        servicios = App.getServicios();
     }
 
     /**
@@ -121,6 +119,7 @@ public class VentanaModificarServicioController implements Initializable {
         result.ifPresent(input -> {
             if (input != null && !input.isEmpty()) {
                 objetoModificar.setMarcaBici(input);
+                App.actualizarServicio();
                 mostrarLabel(objetoModificar);
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "La marca ha sido modificada exitosamente.");
                 alert.show();
@@ -149,6 +148,7 @@ public class VentanaModificarServicioController implements Initializable {
         result.ifPresent(input -> {
             if (input != null && !input.isEmpty()) {
                 objetoModificar.setDescripcion(input.strip());
+                App.actualizarServicio();
                 mostrarLabel(objetoModificar);
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "La descripción ha sido modificada exitosamente.");
                 alert.show();
@@ -177,6 +177,7 @@ public class VentanaModificarServicioController implements Initializable {
         result.ifPresent(input -> {
             if (input != null && esNumerico(input)) {
                 objetoModificar.setPrecio(Integer.parseInt(input));
+                App.actualizarServicio();
                 mostrarLabel(objetoModificar);
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "El precio ha sido modificado exitosamente.");
                 alert.show();
@@ -209,6 +210,7 @@ public class VentanaModificarServicioController implements Initializable {
             if (fechaNueva != null) {
                 if (fechaNueva.isBefore(objetoModificar.getFechaEntrega())) {
                     objetoModificar.setFechaRecibido(fechaNueva);
+                    App.actualizarServicio();
                     mostrarLabel(objetoModificar);
                     dialogStage.close();
                 } else {
@@ -251,6 +253,7 @@ public class VentanaModificarServicioController implements Initializable {
             if (fechaNueva != null) {
                 if (fechaNueva.isAfter(objetoModificar.getFechaRecibido())) {
                     objetoModificar.setFechaEntrega(fechaNueva);
+                    App.actualizarServicio();
                     mostrarLabel(objetoModificar);
                     dialogStage.close();
                 } else {
@@ -290,6 +293,7 @@ public class VentanaModificarServicioController implements Initializable {
         result.ifPresent(input -> {
             if (input != null && !input.isEmpty()) {
                 objetoModificar.setObservaciones(input);
+                App.actualizarServicio();
                 mostrarLabel(objetoModificar);
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Las observaciones han sido modificadas exitosamente.");
                 alert.show();
@@ -339,12 +343,18 @@ public class VentanaModificarServicioController implements Initializable {
 
         // Maneja la opción seleccionada (si el usuario hizo una elección)
         input.ifPresent(opcionUser -> {
-            if (!opcionUser.equals(" ")) {
-                objetoModificar = obtenerServicioEspecifico(servicios, Integer.parseInt(opcionUser.substring(0, 1)));
-                mostrarLabel(objetoModificar);
-                menuOpciones.setDisable(false);
-            } else {
-                Alert alert = new Alert(Alert.AlertType.ERROR, "Debes seleccionar una opción.");
+            try{
+                if (!opcionUser.equals(" ")) {
+                    objetoModificar = obtenerServicioEspecifico(servicios, Integer.parseInt(opcionUser.split(" ")[0]));
+                    System.out.println(objetoModificar);
+                    mostrarLabel(objetoModificar);
+                    menuOpciones.setDisable(false);
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR, "Debes seleccionar una opción.");
+                    alert.show();
+                }
+            }catch (Exception e) {
+                Alert alert = new Alert(Alert.AlertType.ERROR, "No hay servicios registrados para el cliente");
                 alert.show();
             }
         });
@@ -361,7 +371,7 @@ public class VentanaModificarServicioController implements Initializable {
      */
     private servicio obtenerServicioEspecifico(ArrayList<servicio> servicios, int filtro) {
         for (servicio servicio : servicios) {
-            if (servicio.getCodigoServicio() == filtro) {
+            if (servicio.getCodigoCliente() == filtro) {
                 return servicio;
             }
         }
