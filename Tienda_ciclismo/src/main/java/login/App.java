@@ -398,6 +398,7 @@ public class App extends Application {
     }
 
     public static int buscarCodigoDisponible(ArrayList lista) {
+        try{
         ArrayList<Integer> codigos = new ArrayList<>();
         Object objeto = lista.get(0);
         if (objeto instanceof Cliente) {
@@ -426,6 +427,9 @@ public class App extends Application {
                 codigos.add(servicio.getCodigoServicio());
             }
             return siguienteCodigoDisponible(codigos);
+        }
+        }catch(Exception e){
+            return 1;
         }
     }
 
