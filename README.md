@@ -4,6 +4,6 @@
 ### 2021577352 Dylan Jose Meza Marín
 ### 2021579554 Vidal Humbreto Flores Montero
 ### 2019046469 Luis Fernando Ambron Araya
-### Estado del proyecto: Escala de 1 a 5, 1 siendo completo y 5 muy malo
-### Enlace del video: (Si esto fue solicitado)
-Recordar que el video debe ser público y con sonido para ser visto por el profesor
+### Estado del proyecto: 1
+### Enlace del video: https://youtu.be/92Hq4uAVhJU
+
