@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.registroFacturaController">
+   <children>
+      <Text layoutX="129.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú de facturación">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonBuscar" layoutX="299.0" layoutY="85.0" mnemonicParsing="false" onAction="#opcionBuscarPorCodigo" prefHeight="39.0" prefWidth="99.0" text="  Buscar  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonAgregar" layoutX="299.0" layoutY="249.0" mnemonicParsing="false" onAction="#opcionAgregarFactura" prefHeight="39.0" prefWidth="99.0" text="  Agregar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="43.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Buscar factura por fecha" wrappingWidth="217.6171875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Agregar factura">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="botRegresar" layoutX="299.0" layoutY="318.0" mnemonicParsing="false" onAction="#regresar" prefHeight="39.0" prefWidth="99.0" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="43.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Salir del submenú">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Buscar factura por nombre o código de facturación" wrappingWidth="269.6171875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonBuscarFecha" layoutX="299.0" layoutY="174.0" mnemonicParsing="false" onAction="#opcionBuscarPorFecha" prefHeight="39.0" prefWidth="99.0" text="  Buscar  ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

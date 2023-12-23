@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.VentanaAgregarServicioController">
+   <children>
+      <Text layoutX="175.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú para agregar un servicio">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente:" />
+      <Text layoutX="321.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca de la bicicleta:" />
+      <Text layoutX="14.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción de la bicicleta:" />
+      <Text layoutX="117.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio:" />
+      <Text layoutX="55.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de recibido:" />
+      <Text layoutX="332.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de entrega:" />
+      <Text layoutX="71.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Observaciones:" />
+      <Text layoutX="388.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado:" />
+      <Button fx:id="botAgregar" layoutX="263.0" layoutY="341.0" mnemonicParsing="false" onAction="#agregar" text="Agregar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botRegresar" layoutX="379.0" layoutY="341.0" mnemonicParsing="false" onAction="#regresar" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dateRecibido" editable="false" layoutX="165.0" layoutY="177.0" onAction="#validarFecha" prefHeight="25.0" prefWidth="140.0" />
+      <TextField fx:id="textMarca" layoutX="444.0" layoutY="80.0" prefHeight="25.0" prefWidth="146.0" />
+      <DatePicker fx:id="dateEntrega" editable="false" layoutX="442.0" layoutY="177.0" onAction="#validarFecha" prefHeight="25.0" prefWidth="146.0" />
+      <TextField fx:id="textPrecio" layoutX="165.0" layoutY="224.0" prefHeight="25.0" prefWidth="140.0" />
+      <Text fx:id="textEstado" layoutX="442.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   " />
+      <TextArea fx:id="textObservaciones" layoutX="164.0" layoutY="257.0" prefHeight="75.0" prefWidth="423.0" />
+      <ComboBox fx:id="codClientes" layoutX="167.0" layoutY="80.0" prefHeight="25.0" prefWidth="140.0" />
+      <TextArea fx:id="textDescripcion" layoutX="164.0" layoutY="118.0" prefHeight="50.0" prefWidth="423.0" />
+      <Button fx:id="botLimpiar" layoutX="144.0" layoutY="341.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

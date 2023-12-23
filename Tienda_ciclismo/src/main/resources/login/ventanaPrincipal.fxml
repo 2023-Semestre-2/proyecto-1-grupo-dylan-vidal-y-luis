@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.ventanaPrincipalController">
+   <children>
+      <Text layoutX="81.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BicisTec">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Tu taller mecánico de confianza!" wrappingWidth="210.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="botProductos" layoutX="305.0" layoutY="96.0" mnemonicParsing="false" onAction="#opcionRegistrarProductos" text=" Productos ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botClientes" layoutX="305.0" layoutY="160.0" mnemonicParsing="false" onAction="#opcionRegistrarClientes" text="   Clientes   ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botFacturacion" layoutX="306.0" layoutY="281.0" mnemonicParsing="false" onAction="#opcionRealizarFactura" text="Facturación">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botServicios" layoutX="306.0" layoutY="223.0" mnemonicParsing="false" onAction="#opcionRegistrarServicios" prefHeight="39.0" prefWidth="115.0" text="  Servicio   ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="83.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Registro de bicicletas y   accesorios para ciclismo" wrappingWidth="174.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Registro de clientes" wrappingWidth="150.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Registro de servicio de taller" wrappingWidth="194.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Facturación de productos" wrappingWidth="194.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="botSalir" layoutX="307.0" layoutY="343.0" mnemonicParsing="false" onAction="#salir" prefHeight="39.0" prefWidth="115.0" text="Salir">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="23.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="___________________________________________" wrappingWidth="256.375" />
+      <Text layoutX="81.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Salir del sistema" wrappingWidth="194.8173828125">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

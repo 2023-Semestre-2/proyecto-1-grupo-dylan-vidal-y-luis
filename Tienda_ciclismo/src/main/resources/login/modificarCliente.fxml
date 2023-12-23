@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModificarClienteController">
+   <children>
+      <Button layoutX="308.0" layoutY="502.0" mnemonicParsing="false" onAction="#regresar" prefHeight="39.0" prefWidth="100.0" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btLimpiar" layoutX="186.0" layoutY="502.0" mnemonicParsing="false" onAction="#limpiarVentana" prefHeight="39.0" prefWidth="100.0" text="Limpiar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btModificar" layoutX="70.0" layoutY="502.0" mnemonicParsing="false" onAction="#modificarCliente" prefHeight="39.0" prefWidth="100.0" text="Modificar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="146.0" layoutY="14.0" text="Modificar cliente">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="117.0" text="Nombre">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="162.0" prefHeight="25.0" prefWidth="59.0" text="Apellido">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="213.0" text="Teléfono">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="263.0" text="Correo electrónico">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="310.0" text="Provincia">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="357.0" text="Cantón">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="400.0" text="Distrito">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="453.0" prefHeight="25.0" prefWidth="148.0" text="Fecha de nacimiento">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entryNombre" layoutX="225.0" layoutY="117.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="entryApellido" layoutX="225.0" layoutY="162.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="entryTelefono" layoutX="225.0" layoutY="213.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="entryCorreo" layoutX="225.0" layoutY="263.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="entryDistrito" layoutX="224.0" layoutY="400.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="entryCanton" layoutX="224.0" layoutY="357.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboProvincia" layoutX="225.0" layoutY="310.0" prefWidth="150.0" />
+      <DatePicker fx:id="fechaNacimiento" layoutX="225.0" layoutY="453.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="elegirCliente" layoutX="146.0" layoutY="65.0" onAction="#clienteElegido" prefHeight="25.0" prefWidth="162.0" promptText="Elija un cliente" />
+   </children>
+</AnchorPane>
