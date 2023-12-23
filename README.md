@@ -5,5 +5,4 @@
 ### 2021579554 Vidal Humbreto Flores Montero
 ### 2019046469 Luis Fernando Ambron Araya
 ### Estado del proyecto: 1
-### Enlace del video: https://youtu.be/92Hq4uAVhJU
-
+### Enlace del video: https://www.youtube.com/watch?v=92Hq4uAVhJU
