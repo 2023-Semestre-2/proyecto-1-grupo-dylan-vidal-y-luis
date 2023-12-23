@@ -1,0 +1,58 @@
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/Dilan/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1.jar;C:/Users/Dilan/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1.jar'
+--module-path
+'C:/Users/Dilan/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1-win.jar;C:/Users/Dilan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar;C:/Users/Dilan/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1-win.jar;C:/Users/Dilan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar;C:/Users/Dilan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar;C:/Users/Dilan/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar;C:/Users/Dilan/.m2/repository/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1.jar;C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/target/classes;C:/Users/Dilan/.m2/repository/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1.jar'
+--patch-module
+login='C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/src/main/java'
+-encoding
+'UTF-8'
+-protected
+--release
+11
+--module-source-path
+'C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Tienda_ciclismo 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Tienda_ciclismo 1.0-SNAPSHOT API'
+archivos
+clases
+controllers
+login
+validacionDatos
+'C:/Users/Dilan/OneDrive/Documentos/GitHub/Proyecto1_POO/Tienda_ciclismo/src/main/java/module-info.java'
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\allclasses-index.html = 1703290811312
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\allpackages-index.html = 1703290811315
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\copy.svg = 1703290811385
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\element-list = 1703290811114
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\help-doc.html = 1703290811377
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\index-all.html = 1703290811360
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\index.html = 1703290811366
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\jquery-ui.overrides.css = 1703290811404
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\member-search-index.js = 1703290811324
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\module-search-index.js = 1703290811318
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\overview-tree.html = 1703290811287
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\package-search-index.js = 1703290811319
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\script.js = 1703290811383
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\search-page.js = 1703290811389
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\search.html = 1703290811363
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\search.js = 1703290811387
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\stylesheet.css = 1703290811381
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\tag-search-index.js = 1703290811327
+C:\Users\Dilan\OneDrive\Documentos\GitHub\Proyecto1_POO\Tienda_ciclismo\target\site\apidocs\type-search-index.js = 1703290811322

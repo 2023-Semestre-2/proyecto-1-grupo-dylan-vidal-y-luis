@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistroArticulosController">
+   <children>
+      <Text layoutX="155.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú para agregar un nuevo artículo">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="tipoProducto" layoutX="150.0" layoutY="77.0" prefHeight="25.0" prefWidth="179.0" />
+      <Text layoutX="26.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de producto:" wrappingWidth="103.791015625" />
+      <Text layoutX="26.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del artículo:" wrappingWidth="113.791015625" />
+      <TextField fx:id="nombreArticulo" layoutX="150.0" layoutY="119.0" prefHeight="25.0" prefWidth="179.0" />
+      <Text layoutX="26.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categoría del artículo:" />
+      <ComboBox fx:id="tiposArticulo" layoutX="150.0" layoutY="168.0" onAction="#habilitarComboBox" prefHeight="25.0" prefWidth="179.0" />
+      <Text layoutX="340.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca del artículo:" />
+      <TextField fx:id="marcaArticulo" layoutX="454.0" layoutY="73.0" prefHeight="25.0" prefWidth="179.0" />
+      <Text layoutX="340.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio del artículo:" />
+      <Text layoutX="340.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad:" />
+      <TextField fx:id="precioArticulo" layoutX="453.0" layoutY="123.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="cantidadArticulo" layoutX="453.0" layoutY="178.0" prefHeight="25.0" prefWidth="179.0" />
+      <Button fx:id="botAgregar" layoutX="231.0" layoutY="265.0" mnemonicParsing="false" onAction="#crearNuevoArticulo" text="Agregar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botRegresar" layoutX="405.0" layoutY="265.0" mnemonicParsing="false" onAction="#regresar" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="tamanno" layoutX="26.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamaño:" />
+      <ComboBox fx:id="tamannoArticulo" disable="true" layoutX="150.0" layoutY="218.0" prefHeight="25.0" prefWidth="179.0" visibleRowCount="7" />
+   </children>
+</AnchorPane>

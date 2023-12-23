@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BuscarClienteController">
+   <children>
+      <Button layoutX="332.0" layoutY="495.0" mnemonicParsing="false" onAction="#regresar" prefHeight="39.0" prefWidth="96.0" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="157.0" layoutY="14.0" text="Buscar cliente">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombre" layoutX="14.0" layoutY="131.0" prefHeight="25.0" prefWidth="395.0" text="Nombre:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="apellido" layoutX="14.0" layoutY="178.0" prefHeight="25.0" prefWidth="395.0" text="Apellido:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="telefono" layoutX="14.0" layoutY="226.0" prefHeight="25.0" prefWidth="395.0" text="Teléfono:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="correo" layoutX="14.0" layoutY="278.0" prefHeight="25.0" prefWidth="395.0" text="Correo electrónico:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="provincia" layoutX="14.0" layoutY="323.0" prefHeight="25.0" prefWidth="395.0" text="Provincia:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="canton" layoutX="14.0" layoutY="367.0" prefHeight="25.0" prefWidth="395.0" text="Cantón:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="distrito" layoutX="14.0" layoutY="413.0" prefHeight="25.0" prefWidth="395.0" text="Distrito:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="fechaN" layoutX="14.0" layoutY="466.0" prefHeight="25.0" prefWidth="395.0" text="Fecha de nacimiento:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btBuscar" layoutX="332.0" layoutY="66.0" mnemonicParsing="false" onAction="#mostrarBusqueda" prefHeight="39.0" prefWidth="96.0" text="Buscar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="obtenerDato" layoutX="19.0" layoutY="66.0" prefHeight="39.0" prefWidth="292.0" promptText="Ingrese el código o el nombre de la persona">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="botEliminar" disable="true" layoutX="195.0" layoutY="495.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="39.0" prefWidth="96.0" text="Eliminar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botLimpiar" layoutX="69.0" layoutY="495.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="39.0" prefWidth="96.0" text="Limpiar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

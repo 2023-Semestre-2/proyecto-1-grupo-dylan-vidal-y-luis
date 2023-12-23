@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BuscarFacturaFechaController">
+   <children>
+      <Button layoutX="332.0" layoutY="495.0" mnemonicParsing="false" onAction="#regresar" prefHeight="39.0" prefWidth="96.0" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="141.0" layoutY="14.0" text="Buscar Factura">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombre" layoutX="14.0" layoutY="118.0" prefHeight="25.0" prefWidth="395.0" text="Nombre de cliente:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btBuscar" layoutX="332.0" layoutY="66.0" mnemonicParsing="false" onAction="#mostrarBusqueda" prefHeight="39.0" prefWidth="96.0" text="Buscar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="botLimpiar" layoutX="69.0" layoutY="495.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="39.0" prefWidth="96.0" text="Limpiar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botAnular" layoutX="201.0" layoutY="495.0" mnemonicParsing="false" onAction="#anularFactura" prefHeight="39.0" prefWidth="96.0" text="Anular">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="descripcionProducto" layoutX="14.0" layoutY="186.0" prefHeight="264.0" prefWidth="426.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label fx:id="total" layoutX="14.0" layoutY="455.0" prefHeight="25.0" prefWidth="395.0" text="Total:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="157.0" prefHeight="25.0" prefWidth="166.0" text="Descripción de factura:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboFactura" layoutX="20.0" layoutY="66.0" prefHeight="39.0" prefWidth="292.0" />
+      <DatePicker fx:id="fecha" layoutX="19.0" layoutY="66.0" onAction="#buscarFecha" prefHeight="39.0" prefWidth="292.0" />
+   </children>
+</AnchorPane>

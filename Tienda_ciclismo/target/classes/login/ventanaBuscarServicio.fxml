@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="315.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.VentanaBuscarServicioController">
+   <children>
+      <Text layoutX="217.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú para buscar servicio">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <MenuBar prefHeight="25.0" prefWidth="790.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Buscar servicio">
+               <items>
+                  <MenuItem fx:id="busqCodCliente" mnemonicParsing="false" onAction="#busquedaCodigoCliente" text="Buscar por código de cliente" />
+                  <MenuItem fx:id="busqNombCliente" mnemonicParsing="false" onAction="#busquedaNombreCliente" text="Buscar por nombre de cliente" />
+               </items>
+            </Menu>
+            <Menu fx:id="menuEliminar" disable="true" mnemonicParsing="false" text="Eliminar servicio">
+               <items>
+                  <MenuItem fx:id="botEliminar" mnemonicParsing="false" onAction="#eliminarServicio" text="Eliminar por código del servicio" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="botRegresar" layoutX="348.0" layoutY="261.0" mnemonicParsing="false" onAction="#regresar" text="Regresar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="gridInformacion" layoutX="22.0" layoutY="90.0" prefHeight="171.0" prefWidth="763.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="42.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="119.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="92.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="129.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.0" minWidth="10.0" prefWidth="83.0" />
+         </columnConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
